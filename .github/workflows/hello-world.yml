@@ -1,0 +1,12 @@
+name: hello-world
+on: 
+  push:
+    branches:
+      - running-hello-world
+jobs:
+  hello-job:
+    runs-on: computer-local
+    steps:
+
+      - name: "running hello-world"
+        uses: echo "hello-world"
